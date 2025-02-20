@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".register"
     android:orientation="vertical"
     android:background="@drawable/recurso">
 
@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="REGISTER"
         android:layout_marginStart="30dp"
         android:textColor="@color/azul"
         android:textSize="30dp"
@@ -30,7 +30,27 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="username"
+        android:text="Name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/azul"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="30dp"
+        android:hint="Ingresa Nombre"
+        android:inputType="text">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:textColor="@color/azul"
@@ -39,7 +59,26 @@
     </TextView>
 
     <EditText
-        android:id="@+id/txt_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="30dp"
+        android:hint="Ingrese Numero de Celular"
+        android:inputType="textEmailAddress">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/azul"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
@@ -51,7 +90,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="password"
+        android:text="Password"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:textColor="@color/azul"
@@ -60,7 +99,6 @@
     </TextView>
 
     <EditText
-        android:id="@+id/txt_Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
@@ -68,22 +106,11 @@
         android:hint="passwordexample"
         android:inputType="textPassword">
     </EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="forget you password"
-        android:layout_gravity="end"
-        android:layout_marginEnd="40dp"
-        android:textColor="@color/azul"
-        android:textSize="10dp"
-        android:fontFamily="sans-serif-black">
-    </TextView>
 
     <Button
-        android:id="@+id/btn_Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="SIGNUP"
         android:layout_marginTop="44dp"
         android:layout_marginStart="250dp"
         android:layout_marginEnd="40dp"
@@ -91,15 +118,14 @@
     </Button>
 
     <TextView
-        android:id="@+id/txt_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have acount...Create"
+        android:text="Already have an account? sign in"
         android:layout_gravity="end"
         android:layout_marginEnd="50dp"
         android:textColor="@color/azul"
         android:textSize="10dp"
-        android:fontFamily="sans-serif"
-        android:clickable="true">
+        android:fontFamily="sans-serif">
     </TextView>
+
 </LinearLayout>
